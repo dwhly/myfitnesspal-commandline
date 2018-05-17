@@ -122,7 +122,7 @@ $ mkdir responses
 $ mkdir browserdir  
   
 * move geckodriver to browserdir directory (should be compatible with variable geckodriverexcecutablePath in parameters file)  
-$ mv geckodriver /home/mfp/mfp/geckodriver  
+$ mv geckodriver /home/mfp/mfp/browserdir/geckodriver  
   
 ----------------------  
 You will need some basic ssh and sftp knowledge. You will use sftp to place project files on server.  

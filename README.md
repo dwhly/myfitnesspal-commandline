@@ -117,7 +117,7 @@ if newer change above wget command, check that is for linux64)
 * unpacking archive  
 $ tar -xzfv geckodriver-v0.20.1-linux64.tar.gz  
   
-* create responses and browserdir directories  
+* create responses and browserdir subdirectories  
 $ mkdir responses  
 $ mkdir browserdir  
   

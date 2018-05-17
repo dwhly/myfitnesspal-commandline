@@ -1,8 +1,8 @@
 ## Tired of their user interface? Use MFP from the command line or a chat interface (XMPP, etc) 
 myfitnesspal automation using jabber/xmpp  
   
-# Author: Dan Whaley https://hypothes.is  
-# Author: Aleksandar Josifoski https://about.me/josifsk  
+Author: Dan Whaley https://hypothes.is  
+Author: Aleksandar Josifoski https://about.me/josifsk  
   
 Commands in terminal are recognizible with $ prefix  
   

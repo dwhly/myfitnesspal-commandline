@@ -83,13 +83,13 @@ $ sudo timedatectl set-timezone America/Los_Angeles
 * If you travel to other time zone do not forget to execute sudo timedatectl set-timezone newtimezon
   
 ----------------------  
-#Create mfp directory for user mfp  
+# Create mfp directory for user mfp  
 After successful login via ssh  
 $ mkdir mfp  
 $ cd mfp  
 (stay there in mfp directory for following installations)  
 ----------------------  
-#Installation  dependencies  
+# Installation  dependencies  
 keep.py is using python2.7  
 mfp.py is using python3+, default 3.5 on digitalocean is fine  
   

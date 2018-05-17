@@ -79,8 +79,8 @@ $ timedatectl list-timezones  (then use pageup/down to scroll, let say it's Amer
 then  
 $ sudo timedatectl set-timezone America/Los_Angeles  
 (This way server time will be adjusted to your local time which is important for synchronization with mfp site)  
-
-* If you travel to other time zone do not forget to execute sudo timedatectl set-timezone newtimezon
+  
+* If you travel to other time zone do not forget to execute sudo timedatectl set-timezone newtimezone  
   
 ----------------------  
 # Create mfp directory for user mfp  

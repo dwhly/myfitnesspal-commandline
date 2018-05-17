@@ -174,6 +174,8 @@ However, xvfb is compatible on linux systems, if you have Mac or using Windows, 
 Recommended command for entering food data:  
 m [or match]. See help for more  
   
+You can use in your xmpp client shift+enter for setting multi commands at once  
+  
 ----------------------  
 Commands for using project via xmpp client.  
 Is project is started on server?  

@@ -1,0 +1,35 @@
+help
+
+sm [or searchmap] (Search in mapping file example: sm kiwi will find all lines where kiwi is inside line)
+
+lqr [or listquantityrelations] (List quantities relations. This command will list quantities_abbrev.txt file if using match command with quantities for conversions.)
+
+n [or note] words (Append note example: n some my note)
+
+sn [or searchnotes] term (Search in notes term)
+
+rnl [or removenoteslines] (Remove notes lines Example: rnl 3, 5, 8 those lines will be removed. This command is for using after searching notes with sn)
+
+map (Adding manually new mapping example: map driedkiwi : Dried Kiwi, 6 Slices, 46 calories [Must have : for separator between key and name in db])
+
+dbmap (Adding new mapping when previous command was sdb example: dbmap  peas : 008 [where 008 is 8.th by sdb listed food]. Later you can use fm command to add food )
+
+fm [or frommap] (Adding food via map in today mfp list example: fm driedkiwi 1 c [where driedkiwi is already present as key in mappings], 1 c means 1 cup. For now fm command is dependend on quantity input, also keys have to be described in one word)
+
+cs [or status] (Calories status)
+
+lt [or listtoday] (List today entered foods)
+
+undo (Remove last added food, you can remove more foods with using more then once undo)
+
+s [or sdb or search] words (Search in db words)
+
+st [or searchtabs] words (search in recent/frequent/myfoods/meals/recipes words. Example: searchtabs kiwi raw)
+
+more [or next] (After searching in db, you can use this command to show you next 10 results)
+
+prev (For showing 10 previous results from search command)
+
+m [or match] (Adding food Example: m banana, raw @ 15 oz [It will seek in recent/frequent/myfoods/meals/recipes/db. In this case program will try to find conversion for metric value from allowed set by given food. If metric is omitted "Example: m banana raw @ 2" it will process first metric value from their allowed set for found food with 2 servings. If used without @ symbol quantity will be 1 serving for first metric value from allowed set for found food "Example: m banana raw])
+
+allowed_commands = ['help', 'm', 'match', 'lt', 'listtoday', 'sn', 'searchnotes', 'sm', 'searchmap','cs', 'status', 'n', 'note', 'map', 'dbmap', 'fm', 'frommap', 'undo', 'lqr', 'listquantityrelations', 'rnl', 'removenoteslines', 's', 'sdb', 'search', 'st', 'searchtabs', 'next', 'more', 'prev']

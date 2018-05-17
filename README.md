@@ -176,7 +176,7 @@ m [or match]. See help for more
   
 ----------------------  
 Commands for using project via xmpp client.  
-Project is started on server?  
+Is project is started on server?  
   
 command you should memorize is help  
 it will generate this (as response xmpp msg)  

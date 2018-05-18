@@ -67,10 +67,10 @@ $ nano ~/.ssh/authorized_keys
 * in nano paste your public key contents (as above for root with cat dan.pub, same key is fine but now for user mfp avoiding ssh to root), this way you  will have ssh access to droplet via username mfp  
 * Hit Ctrl + X and save file  
 * Now restrict the permissions of the authorized_keys file with this command:  
-$ chmod 600 ~/.ssh/authorized_keys  
+$ sudo chmod 600 ~/.ssh/authorized_keys  
 $ exit  
   
-close terminal window, reopen it, test ssh connection using user (in this case mfp (not root) via command  
+Close ssh connection (Ctrl + d), test ssh connection using user (in this case mfp (not root) via command  
 $ ssh -vvv -i dan mfp@your-ip (mfp is user, dan is name of file with your private key (do not forget to be navigated previously via cd command to directory where private key is, project source file should be also placed there))  
   
 Adjusting server time where project will be uploaded (not mfp site) to your local timezone  
@@ -117,7 +117,7 @@ $ wget https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodri
 (or you can check for new geckodriver release on https://github.com/mozilla/geckodriver/releases/download/)  
 if newer change above wget command, check that is for linux64)  
 * unpacking archive  
-$ tar -xzfv geckodriver-v0.20.1-linux64.tar.gz  
+$ tar -xzf geckodriver-v0.20.1-linux64.tar.gz  
   
 * create responses and browserdir subdirectories  
 $ mkdir responses  

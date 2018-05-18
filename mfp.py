@@ -1219,7 +1219,7 @@ if __name__ == '__main__':
             for frame in traceback.extract_tb(sys.exc_info()[2]):
                 fname, lineno, fn, text = frame
                 print("Error in %s on line %d" % (fname, lineno))
-            pout = ''
+            pout = 'From main error handler: '
             pout += str(e)
             print(pout)
             write_responses(pout)

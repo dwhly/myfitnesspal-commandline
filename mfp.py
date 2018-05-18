@@ -417,14 +417,18 @@ def write_map_food(key, nq, sq, bopenpages):
         time.sleep(1)
     xpath = '//input[@id="search"]'
     waitForLoadbyXpath(xpath)
-    
+
+    # Enter searching terms in box
     el = driver.find_element_by_xpath(xpath)
     el.clear()
     el.send_keys(dmap[key])
-    time.sleep(0.2)
+    time.sleep(1)
+
+    # click on green Search button
     xpath = '//input[@value="Search"]'
     el = driver.find_element_by_xpath(xpath)
     el.click()
+    
     xpath = '//li[@class="matched-food"]'
     waitForLoadbyXpath(xpath)
     elresults = driver.find_elements_by_xpath(xpath)
@@ -745,8 +749,18 @@ def process_today(tolist, removelast, statusonly):
             print(pout)
             write_responses(pout)
     except Exception as e:
-        print(str(e))
-        write_responses(str(e))
+        pout = str(e)
+        print(pout)
+        write_responses(pout)
+        if 'Tried to run command without establishing a connection'.lower() in pout.lower():
+            pout = 'Connection in firefox was lost. Reconnecting..'
+            print(pout)
+            write_responses(pout)
+            #driver.close()
+            setbrowser()
+            url = "https://www.myfitnesspal.com"
+            openurl(url)
+            check_login()
         
 def show_search_results(x, itorange):
     ''' function to show found results from search command '''
@@ -1227,12 +1241,6 @@ if __name__ == '__main__':
                 os.remove(dir_in + 'command.txt')
             except Exception as e:
                 pass
-            if 'Tried to run command without establishing a connection'.lower() in pout.lower():
-                pout = 'There is disconnection on mfp site, relogin now'
-                print(pout)
-                write_responses(pout)
-                url = "https://www.myfitnesspal.com"
-                openurl(url)
-                check_login()
+
     if allow_selenium:
         driver.close()

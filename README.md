@@ -189,6 +189,9 @@ However, xvfb is compatible on linux systems, if you have Mac or using Windows, 
 Recommended command for entering food data:  
 m [or match]. See help for more  
   
+Can program run faster?  
+Program is selenium headless firefox based, just for entering food with match [or m] command use as much as possible shift + enter in your xmpp client when entering foods (multiline commands), to avoid loosing time.  
+  
 You can use in your xmpp client shift+enter for setting multi commands at once  
   
 ----------------------  

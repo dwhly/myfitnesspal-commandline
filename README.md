@@ -153,7 +153,7 @@ $ sudo apt install git
 via ssh terminal  
 $ git clone https://github.com/dwhly/myfitnesspal-commandline.git  
 
-* rename myfitnesspal-commandline to mfp
+* rename myfitnesspal-commandline to mfp  
 $ mv /home/mfp/myfitnesspal-commandline /home/mfp/mfp  
 and use vim/nano to make needed modifications  
   

@@ -13,9 +13,9 @@ First things to do:
   
 * Project design is to use instead Breakfast, Lunch, Supper, Snacks only one item for entering food (daily bulk), here https://www.myfitnesspal.com/account/diary_settings change Meal Names: with only one (first) field called today.  
   
-* You'll need to create (if not having) 3 jabber accounts, one will be used by keep.py script, other for laptop/desktop IM messenger, third for mobile (although jabber supports synchronization of messages, more stable will be using own jabber ID for mobile.  
+* You'll need to create (if not having) 2 jabber accounts, one will be used by keep.py script, other for laptop/desktop/mobile IM messenger.  
   
-* Next step is to make 3 jabber accounts to mutually (both directions) authorize each other. You can do that using some xmpp client. After that remember, server jabber account should be logged only via keep.py, disconnect it from laptop messenger.  
+* Next step is to make 2 jabber accounts to mutually (both directions) authorize each other. You can do that using some xmpp client. After that remember, server jabber account should be logged only via keep.py, disconnect it from laptop messenger.  
   
 * Update mfp_parameters.py file with your mfp username and password. Later you will need 2 subdirectories in main directory (let called it mfp on server) browserdir and responses. browserdir will be connected with headless firefox using geckodriver, responses directory will be used for main python program called mfp.py to send msgs to keep.py (which is xmpp 2 directional client for receiving/sending messages) with which you will communicate! (Directories defined in parameters file should match prepared on server) 
   

@@ -756,7 +756,6 @@ def process_today(tolist, removelast, statusonly):
             pout = 'Connection in firefox was lost. Reconnecting..'
             print(pout)
             write_responses(pout)
-            #driver.close()
             setbrowser()
             url = "https://www.myfitnesspal.com"
             openurl(url)
@@ -855,6 +854,14 @@ def put_info(line):
                             pout += str(e)
                             print(pout)
                             write_responses(pout)
+                            if 'Tried to run command without establishing a connection'.lower() in pout.lower():
+                                pout = 'Connection in firefox was lost. Reconnecting..'
+                                print(pout)
+                                write_responses(pout)
+                                setbrowser()
+                                url = "https://www.myfitnesspal.com"
+                                openurl(url)
+                                check_login()
             else:
                 pout = 'selenium not allowed'
                 print(pout)

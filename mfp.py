@@ -156,13 +156,13 @@ def highlight(element):
 def check_login():
     ''' function for checking login status on myfitnesspal and if needed login inside '''
     
-    xpath = "/html/body/div[2]/ul/li[5]/a" # If element exists shows Logout text on page
+    xpath = '//a[@href="/account/logout"]' # If element exists shows Logout text on page
     if is_element_present(xpath):
         # We are alrady login
         print("We are already login")
     else:
         # procedure for login
-        xpath = "/html/body/div[3]/div/ul/li[8]/a"
+        xpath = '//a[@href="#fancy_login"]'
         try:
             el = driver.find_element_by_xpath(xpath)
             el.click()

@@ -12,6 +12,9 @@ import traceback
 import xmpp
 import codecs
 import glob
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # dir_in is directory where project files will be placed, assuming that on server
 # username is mfp and directory is also called mfp
